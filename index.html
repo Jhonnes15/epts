@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+    function pao(){
+        resultado.value= parseInt(bah1.value) + parseInt(bah2.value);
+    }
+
+    function multiplicar(){
+        resultado.value= parseInt(bah1.value) * parseInt(bah2.value);
+    }
+
+    function dividir(){
+        if(bah2.value ==0){
+            alert("Erro");
+        }
+        else{
+            resultado.value = parseFloat (bah1.value) / parseFloat(bah2.value);
+        }
+    }
+</script>
+ <h1>Soma de valores</h1>
+ valor 1: <input type="text" id="bah1" value="5"><br>
+ valor 2: <input type="text" id="bah2" value="2"><br>
+ <input type="button" value="somar" onclick="pao()">
+ <input type="button" value="multiplicar" onclick="multiplicar()">
+ <input type="button" value="dividir" onclick="dividir()"><br>
+
+ resultado: <input type="text" value="0" id="resultado">
+</body>
+</html>
